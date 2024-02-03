@@ -15,11 +15,11 @@ A launch file coordinates the initialization and termination of system component
 
 ### Prerequisites
 
-- ROS2 Foxy Fitzroy (or newer)
+- ROS2 Humble Hawksbill
 - PCL (Point Cloud Library) for Euclidean clustering
 - OpenCV (optional) for additional visualization
 
-**Design Choices and Rationale**
+### Design Choices and Rationale 
 Real-Time Processing: Essential for dynamic environments to provide timely information.
 Threshold-Based Movement Detection: Efficient at differentiating static and moving objects with minimal computational overhead.
 Euclidean Clustering for Object Segmentation: Effectively separates individuals in crowded scenes.
@@ -27,14 +27,13 @@ Simple Tracking Algorithm with Constant Velocity Model: Balances accuracy and co
 Cumulative Counting of Unique Individuals: Simplifies tracking over time without complex identity management.
 
 
-**Parameters and Tuning**
+### Parameters and Tuning
 Movement Detection Threshold, Euclidean Clustering Parameters (distance tolerance, min/max cluster size), and Tracking Update Interval were empirically determined for optimal performance.
 Results and Expectations
 The system demonstrated high accuracy in detecting and tracking people in various test scenarios. Fine-tuning parameters allowed for significant improvements, especially in challenging conditions like crowded environments or at the edges of the LIDAR range.
 
-**License**
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Acknowledgments**
+
+### Acknowledgments
 ROS2 Community for the comprehensive documentation and forums.
 Contributors to the PCL and OpenCV libraries.
