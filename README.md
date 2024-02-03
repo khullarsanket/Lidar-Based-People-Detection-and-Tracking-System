@@ -25,7 +25,9 @@ Threshold-Based Movement Detection: Efficient at differentiating static and movi
 Euclidean Clustering for Object Segmentation: Effectively separates individuals in crowded scenes.
 Simple Tracking Algorithm with Constant Velocity Model: Balances accuracy and computational efficiency for real-time applications.
 Cumulative Counting of Unique Individuals: Simplifies tracking over time without complex identity management.
-Parameters and Tuning
+
+
+**Parameters and Tuning**
 Movement Detection Threshold, Euclidean Clustering Parameters (distance tolerance, min/max cluster size), and Tracking Update Interval were empirically determined for optimal performance.
 Results and Expectations
 The system demonstrated high accuracy in detecting and tracking people in various test scenarios. Fine-tuning parameters allowed for significant improvements, especially in challenging conditions like crowded environments or at the edges of the LIDAR range.
